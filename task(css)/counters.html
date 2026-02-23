@@ -1,0 +1,33 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    On the body, reset a counter named section using counter-reset
+    On each h2, increment the counter using counter-increment: section
+    On h2::before, display the counter using content: counter(section) ". " -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2 {
+  counter-increment: section;
+}
+
+h2::before {
+  content: counter(section) ". ";
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Counters</h1>
+<h2>HTML</h2>
+<h2>CSS</h2>
+<h2>JavaScript</h2>
+
+</body>
+</html>

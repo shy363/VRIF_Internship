@@ -1,0 +1,54 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set .inline display to inline (notice: width/height are ignored)
+    Set .block display to block (each takes a full row)
+    Add a .inline-block rule: set display to inline-block, width to 150px, and height to 50px -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+}
+</style>
+</head>
+<body>
+
+<h3>display: inline</h3>
+<span class="inline">One</span>
+<span class="inline">Two</span>
+<span class="inline">Three</span>
+
+<h3>display: block</h3>
+<span class="block">One</span>
+<span class="block">Two</span>
+<span class="block">Three</span>
+
+<h3>display: inline-block</h3>
+<span class="inline-block">One</span>
+<span class="inline-block">Two</span>
+<span class="inline-block">Three</span>
+
+</body>
+</html>

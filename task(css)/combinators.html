@@ -1,0 +1,42 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Use the descendant selector div p to set color to blue
+    Use the child selector div > p to set font-weight to bold
+    Use the adjacent sibling selector h2 + p to set color to red
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+div p {
+  color: blue;
+}
+
+div > p {
+  font-weight: bold;
+}
+
+h2 + p {
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Direct child of div.</p>
+  <section>
+    <p>Nested inside section (still a descendant of div).</p>
+  </section>
+</div>
+
+<h2>Heading</h2>
+<p>First paragraph after the heading.</p>
+<p>Second paragraph after the heading.</p>
+
+</body>
+</html>
+

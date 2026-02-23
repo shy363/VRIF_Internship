@@ -1,0 +1,47 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the button background-color to #04AA6D, color to white, and border to none
+    Add a button:hover rule: set background-color to #028a4e
+    Add an input:focus rule: set outline to 2px solid #04AA6D
+    Add a p:first-child rule: set font-weight to bold -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #028a4e;
+}
+
+input:focus {
+  outline: 2px solid #04AA6D;
+}
+
+p:first-child {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>This first paragraph should be bold (first-child).</p>
+  <p>This paragraph is normal.</p>
+</div>
+
+<button>Hover over me</button>
+<br><br>
+<input type="text" placeholder="Click to focus">
+
+</body>
+</html>

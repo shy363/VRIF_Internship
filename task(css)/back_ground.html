@@ -1,0 +1,38 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the #hero background-size to cover so the image fills the entire area
+    Set the #hero background-origin to border-box
+    Set the #card background-size to contain so the image fits without cropping -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#hero {
+  background-image: url('img_5terre.jpg');
+  background-repeat: no-repeat;
+  height: 200px;
+  border: 10px dashed black;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+#card {
+  background-image: url('img_5terre.jpg');
+  background-repeat: no-repeat;
+  height: 200px;
+  border: 1px solid silver;
+  background-size: contain;
+}
+</style>
+</head>
+<body>
+
+<div id="hero">Hero Section (cover)</div>
+<div id="card">Card (contain)</div>
+
+</body>
+</html>

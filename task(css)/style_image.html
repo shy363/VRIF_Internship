@@ -1,0 +1,42 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Make the img responsive: set max-width to 100% and height to auto
+    Add a hover effect to .card: set box-shadow to 0 4px 8px rgba(0,0,0,0.2)
+    Set the .card img border-radius to 5px 5px 0 0 (rounded top corners only) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 300px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="img_5terre.jpg" alt="Cinque Terre">
+  <div style="padding:15px">
+    <h3>Cinque Terre</h3>
+    <p>Five beautiful villages on the Italian Riviera.</p>
+  </div>
+</div>
+
+</body>
+</html>

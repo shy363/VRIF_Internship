@@ -1,0 +1,36 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Force the link to inherit the parent's color: set .card a color to inherit
+    Reset the border on .card p to its default: set border to initial -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+  color: dimgray;
+  border: 2px solid #04AA6D;
+  padding: 15px;
+  width: 300px;
+}
+
+.card a {
+  color: inherit;
+}
+
+.card p {
+  border: initial;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h3>CSS Inheritance</h3>
+  <p>Links normally don't inherit color. Use <b>inherit</b> to force it.</p>
+  <a href="#">This link inherits the card color</a>
+</div>
+
+</body>
+</html>

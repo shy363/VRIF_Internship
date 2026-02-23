@@ -1,0 +1,34 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Style all links with a target attribute: use a[target] and set color to red
+    Style links where target equals _blank: use a[target="_blank"] and set background-color to yellow
+    Style inputs of type text: use input[type="text"] and set border to 2px solid blue -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a[target] {
+  color: red;
+}
+
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+input[type="text"] {
+  border: 2px solid blue;
+}
+</style>
+</head>
+<body>
+
+<a href="#">Normal link</a><br>
+<a href="#" target="_self">Self target link</a><br>
+<a href="#" target="_blank">Blank target link</a>
+
+<p>Name: <input type="text"></p>
+
+</body>
+</html>

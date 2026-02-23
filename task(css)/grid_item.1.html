@@ -1,0 +1,47 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Make .header span all 3 columns using grid-column: 1 / 4
+    Make .sidebar span 2 rows using grid-row: 2 / 4 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid > div {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: dimgray !important;
+  grid-column: 1 / 4;
+}
+
+.sidebar {
+  background-color: gray !important;
+  grid-row: 2 / 4;
+}
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <div class="header">Header</div>
+  <div class="sidebar">Sidebar</div>
+  <div>Content 1</div>
+  <div>Content 2</div>
+  <div>Content 3</div>
+  <div>Content 4</div>
+</div>
+
+</body>
+</html>

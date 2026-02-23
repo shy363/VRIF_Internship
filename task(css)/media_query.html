@@ -1,0 +1,42 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Create a media query for screens with max-width: 768px
+    Inside the media query, change .col width to 100% (stack columns on small screens)
+    Inside the media query, hide .sidebar with display: none -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { box-sizing: border-box; }
+
+.col {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.sidebar {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .col {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="col">Main Content</div>
+<div class="col">Second Column</div>
+<div class="sidebar">Sidebar (hidden on small screens)</div>
+
+</body>
+</html>

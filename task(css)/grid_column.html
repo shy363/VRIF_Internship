@@ -1,0 +1,43 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .grid grid-template-columns to repeat(12, 1fr) (12-column grid)
+    Make .col-8 span 8 columns using grid-column: span 8
+    Make .col-4 span 4 columns using grid-column: span 4 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid > div {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-4 {
+  background-color: dimgray !important;
+  grid-column: span 4;
+}
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <div class="col-8">Main (8/12)</div>
+  <div class="col-4">Sidebar (4/12)</div>
+</div>
+
+</body>
+</html>

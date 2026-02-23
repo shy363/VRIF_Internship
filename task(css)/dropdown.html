@@ -1,0 +1,43 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Position the .dropdown as relative
+    Position the .dropdown-content as absolute and hide it with display: none
+    On hover (.dropdown:hover .dropdown-content), show it with display: block -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 12px;
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button>Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a><br>
+    <a href="#">Link 2</a><br>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
+</html>

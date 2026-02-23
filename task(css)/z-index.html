@@ -1,0 +1,41 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .container position to relative (z-index only works on positioned elements)
+    Set the .overlay z-index to 1
+    Add an img rule: set position to relative and z-index to -1 (send behind the overlay) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+img {
+  position: relative;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="overlay">This text overlays the image</div>
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="400">
+</div>
+
+</body>
+</html>

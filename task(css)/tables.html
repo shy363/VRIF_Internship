@@ -1,0 +1,45 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set table border-collapse to collapse and width to 100%
+    Add borders: set th, td border to 1px solid lightgray and padding to 12px
+    Style the header: set th background-color to #04AA6D, color to white, and text-align to left
+    Add zebra stripes: set tr:nth-child(even) background-color to #f2f2f2 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid lightgray;
+  padding: 12px;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr><th>Name</th><th>Age</th><th>City</th></tr>
+  <tr><td>Alice</td><td>28</td><td>London</td></tr>
+  <tr><td>Bob</td><td>34</td><td>Paris</td></tr>
+  <tr><td>Carol</td><td>22</td><td>Berlin</td></tr>
+  <tr><td>Dave</td><td>45</td><td>Madrid</td></tr>
+</table>
+
+</body>
+</html>

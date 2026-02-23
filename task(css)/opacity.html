@@ -1,0 +1,35 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .thumbnail opacity to 0.6
+    On hover, restore full visibility: set .thumbnail:hover opacity to 1.0
+    Set the .overlay-text background-color to rgba(0, 0, 0, 0.5) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.thumbnail {
+  width: 200px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbnail:hover {
+  opacity: 1.0;
+}
+
+.overlay-text {
+  color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+</style>
+</head>
+<body>
+
+<img class="thumbnail" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre">
+<div class="overlay-text">Semi-transparent background</div>
+
+</body>
+</html>

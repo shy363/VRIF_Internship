@@ -1,0 +1,42 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .navbar display to flex and justify-content to space-around
+    Create a media query for max-width: 600px
+    Inside the query, change .navbar flex-direction to column and align-items to center -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.navbar {
+  background-color: dimgray;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+</body>
+</html>

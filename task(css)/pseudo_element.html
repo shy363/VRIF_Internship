@@ -1,0 +1,35 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Add a p::first-letter rule: set font-size to 200%, color to #04AA6D, and float to left (creates a drop cap)
+    Add a h2::before rule: set content to "\2605 " (a star) and color to gold
+    Add a h2::after rule: set content to " \2605" and color to gold -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-letter {
+  font-size: 200%;
+  color: #04AA6D;
+  float: left;
+}
+
+h2::before {
+  content: "\2605 ";
+  color: gold;
+}
+
+h2::after {
+  content: " \2605";
+  color: gold;
+}
+</style>
+</head>
+<body>
+
+<h2>Featured Article</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+</body>
+</html>

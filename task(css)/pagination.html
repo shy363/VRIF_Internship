@@ -1,0 +1,46 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Style the .pagination a links: set color to black, padding to 8px 16px, and text-decoration to none
+    Highlight the active page (.pagination a.active): set background-color to #04AA6D and color to white
+    On hover (.pagination a:hover:not(.active)), set background-color to lightgray -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  float: left;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: lightgray;
+}
+</style>
+</head>
+<body>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">&raquo;</a>
+</div>
+
+</body>
+</html>

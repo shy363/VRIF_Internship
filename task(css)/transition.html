@@ -1,0 +1,34 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Add a transition shorthand to the div: width 0.5s, background-color 1s
+    On hover (div:hover), change the width to 300px
+    On hover, also change background-color to dodgerblue -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  transition: width 0.5s, background-color 1s;
+}
+
+div:hover {
+  width: 300px;
+  background-color: dodgerblue;
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the box to see the transition:</p>
+<div>Hover me</div>
+
+</body>
+</html>

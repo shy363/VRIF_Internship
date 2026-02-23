@@ -1,0 +1,36 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Position .tooltip as relative and make it inline-block
+    Position .tooltiptext as absolute and hide it with visibility: hidden
+    On hover (.tooltip:hover .tooltiptext), set visibility: visible -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the word <span class="tooltip">here<span class="tooltiptext">I am a tooltip!</span></span> to see the tooltip.</p>
+
+</body>
+</html>

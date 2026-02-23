@@ -1,0 +1,41 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .solid outline-style to solid and outline-color to #04AA6D
+    Set the .dashed outline using the shorthand: 3px dashed red
+    Add a .offset rule: set outline to 3px solid dimgray and outline-offset to 10px -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  padding: 15px;
+  margin: 25px;
+  border: 1px solid lightgray;
+  outline-width: 3px;
+}
+
+.solid {
+  outline-style: solid;
+  outline-color: #04AA6D;
+}
+
+.dashed {
+  outline: 3px dashed red;
+}
+
+.offset {
+  outline: 3px solid dimgray;
+  outline-offset: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="box solid">Solid green outline (individual properties)</div>
+<div class="box dashed">Dashed red outline (shorthand)</div>
+<div class="box offset">Outline with 10px offset from border</div>
+
+</body>
+</html>

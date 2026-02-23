@@ -1,0 +1,32 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the #box1 border-image-source to url(border.png)
+    Set the #box1 border-image-slice to 30
+    On #box2, use the shorthand border-image: url(border.png) 30 round -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image-source: url(border.png);
+  border-image-slice: 30;
+}
+
+#box2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+</style>
+</head>
+<body>
+
+<div id="box1">Individual properties</div><br>
+<div id="box2">Shorthand with round</div>
+
+</body>
+</html>

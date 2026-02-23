@@ -1,0 +1,34 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Center the first image using margin: set .margin-center display to block and margin to 0 auto
+    Add a .flex-center rule: set display to flex and justify-content to center (centers its child image) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.margin-center {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Method 1: margin auto</h2>
+<img class="margin-center" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre">
+
+<h2>Method 2: flexbox</h2>
+<div class="flex-center">
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="60%">
+</div>
+
+</body>
+</html>

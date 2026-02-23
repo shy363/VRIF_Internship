@@ -1,0 +1,37 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Add a text-shadow to the h1: 2px 2px 5px red
+    Add a box-shadow to the .card: 0 4px 8px rgba(0,0,0,0.2)
+    On hover (.card:hover), change box-shadow to 0 8px 16px rgba(0,0,0,0.3) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+.card {
+  padding: 20px;
+  margin: 20px 0;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+
+<h1>Shadow Effects</h1>
+<div class="card">
+  <h2>Card Title</h2>
+  <p>Hover over this card to see the shadow grow.</p>
+</div>
+
+</body>
+</html>

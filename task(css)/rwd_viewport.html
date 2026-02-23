@@ -1,0 +1,33 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Add the viewport <meta> tag in the <head> section (set width to device-width and initial-scale to 1.0)
+    Prevent the image from overflowing: set img max-width to 100% and height to auto
+    Make the content area responsive: set .content width to 100% -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>Responsive Page</h1>
+  <p>This page uses the viewport meta tag and relative widths to look good on all devices.</p>
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre">
+</div>
+
+</body>
+</html>

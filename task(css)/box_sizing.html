@@ -1,0 +1,30 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Apply box-sizing: border-box to all elements using the * (universal) selector
+    Set .col width to 50%, padding to 20px, and float to left -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.col {
+  border: 1px solid silver;
+  width: 50%;
+  padding: 20px;
+  float: left;
+}
+</style>
+</head>
+<body>
+
+<h1>Two Equal Columns</h1>
+<div class="col">Column 1 — with border-box, padding is included in the 50% width.</div>
+<div class="col">Column 2 — both columns fit side by side.</div>
+
+</body>
+</html>

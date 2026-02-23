@@ -1,0 +1,35 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .cover object-fit to cover (fills the box, may crop)
+    Set the .contain object-fit to contain (fits inside, may letterbox) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightgray;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<h3>Cover (crops to fill)</h3>
+<img class="cover" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cover">
+
+<h3>Contain (fits inside)</h3>
+<img class="contain" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Contain">
+
+</body>
+</html>

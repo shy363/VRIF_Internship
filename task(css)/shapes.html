@@ -1,0 +1,33 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Make the avatar circular: set .avatar border-radius to 50%
+    Clip the banner to a polygon: set .banner-img clip-path to polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+</style>
+</head>
+<body>
+
+<img class="avatar" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Avatar">
+<img class="banner-img" src="https://www.w3schools.com/css/img_forest.jpg" alt="Banner">
+
+</body>
+</html>

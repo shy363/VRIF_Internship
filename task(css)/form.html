@@ -1,0 +1,43 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Style input[type=text]: set width to 100%, padding to 12px, and box-sizing to border-box
+    Style input[type=submit]: set background-color to #04AA6D, color to white, and border to none
+    On hover (input[type=submit]:hover), set background-color to #059862 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text] {
+  margin: 8px 0;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  background-color: #059862;
+}
+</style>
+</head>
+<body>
+
+<form>
+  <label>First Name</label><br>
+  <input type="text" placeholder="Enter first name"><br>
+  <label>Last Name</label><br>
+  <input type="text" placeholder="Enter last name"><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

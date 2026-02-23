@@ -1,0 +1,39 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .scroll-box overflow to auto (scrollbar only when needed)
+    Set the .clip-box overflow to hidden (clip overflowing content) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 250px;
+  height: 100px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.scroll-box {
+  overflow: auto;
+}
+
+.clip-box {
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="box scroll-box">
+  <p>This box has a lot of content. When it overflows, a scrollbar appears automatically. This is useful for content areas with variable length.</p>
+</div>
+
+<div class="box clip-box">
+  <p>This box clips any content that overflows. The extra content is hidden and not accessible to the user.</p>
+</div>
+
+</body>
+</html>

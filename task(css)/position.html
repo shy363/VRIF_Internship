@@ -1,0 +1,39 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .container position to relative (establishes positioning context)
+    Set the .badge position to absolute, top to -10px, and right to -10px -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  width: 200px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid lightgray;
+  position: relative;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <span class="badge">3</span>
+  <p>Notifications</p>
+</div>
+
+</body>
+</html>
